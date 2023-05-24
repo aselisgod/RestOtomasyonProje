@@ -60,7 +60,7 @@
             btnMasa1.Name = "btnMasa1";
             btnMasa1.Size = new Size(217, 145);
             btnMasa1.TabIndex = 0;
-            btnMasa1.Text = "1";
+            btnMasa1.Text = "Masa 1";
             btnMasa1.UseVisualStyleBackColor = true;
             btnMasa1.Click += btnMasa1_Click;
             // 
@@ -74,8 +74,9 @@
             btnMasa2.Name = "btnMasa2";
             btnMasa2.Size = new Size(225, 145);
             btnMasa2.TabIndex = 0;
-            btnMasa2.Text = "2";
+            btnMasa2.Text = "Masa 2";
             btnMasa2.UseVisualStyleBackColor = true;
+            btnMasa2.Click += btnMasa2_Click_1;
             // 
             // btnMasa3
             // 
@@ -87,7 +88,7 @@
             btnMasa3.Name = "btnMasa3";
             btnMasa3.Size = new Size(230, 145);
             btnMasa3.TabIndex = 0;
-            btnMasa3.Text = "3";
+            btnMasa3.Text = "Masa 3";
             btnMasa3.UseVisualStyleBackColor = true;
             // 
             // btnMasa4
@@ -100,7 +101,7 @@
             btnMasa4.Name = "btnMasa4";
             btnMasa4.Size = new Size(223, 145);
             btnMasa4.TabIndex = 0;
-            btnMasa4.Text = "4";
+            btnMasa4.Text = "Masa 4";
             btnMasa4.UseVisualStyleBackColor = true;
             // 
             // btnMasa5
@@ -113,7 +114,7 @@
             btnMasa5.Name = "btnMasa5";
             btnMasa5.Size = new Size(225, 145);
             btnMasa5.TabIndex = 0;
-            btnMasa5.Text = "5";
+            btnMasa5.Text = "Masa 5";
             btnMasa5.UseVisualStyleBackColor = true;
             // 
             // btnMasa6
@@ -126,7 +127,7 @@
             btnMasa6.Name = "btnMasa6";
             btnMasa6.Size = new Size(217, 145);
             btnMasa6.TabIndex = 0;
-            btnMasa6.Text = "6";
+            btnMasa6.Text = "Masa 6";
             btnMasa6.UseVisualStyleBackColor = true;
             // 
             // btnMasa7
@@ -139,7 +140,7 @@
             btnMasa7.Name = "btnMasa7";
             btnMasa7.Size = new Size(225, 145);
             btnMasa7.TabIndex = 0;
-            btnMasa7.Text = "7";
+            btnMasa7.Text = "Masa 7";
             btnMasa7.UseVisualStyleBackColor = true;
             // 
             // btnMasa8
@@ -152,7 +153,7 @@
             btnMasa8.Name = "btnMasa8";
             btnMasa8.Size = new Size(230, 145);
             btnMasa8.TabIndex = 0;
-            btnMasa8.Text = "8";
+            btnMasa8.Text = "Masa 8";
             btnMasa8.UseVisualStyleBackColor = true;
             // 
             // btnMasa9
@@ -165,7 +166,7 @@
             btnMasa9.Name = "btnMasa9";
             btnMasa9.Size = new Size(223, 145);
             btnMasa9.TabIndex = 0;
-            btnMasa9.Text = "9";
+            btnMasa9.Text = "Masa 9";
             btnMasa9.UseVisualStyleBackColor = true;
             // 
             // btnMasa10
@@ -178,7 +179,7 @@
             btnMasa10.Name = "btnMasa10";
             btnMasa10.Size = new Size(225, 145);
             btnMasa10.TabIndex = 0;
-            btnMasa10.Text = "10";
+            btnMasa10.Text = "Masa 10";
             btnMasa10.UseVisualStyleBackColor = true;
             // 
             // btnGeriDön
@@ -210,8 +211,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Info;
+            label1.ForeColor = Color.FromArgb(255, 192, 255);
             label1.Location = new Point(1021, 481);
             label1.Name = "label1";
             label1.Size = new Size(135, 28);
@@ -233,7 +235,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Brown;
+            label3.ForeColor = Color.Red;
             label3.Location = new Point(1021, 573);
             label3.Name = "label3";
             label3.Size = new Size(57, 28);
@@ -253,10 +255,10 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.Info;
+            button1.BackColor = Color.FromArgb(255, 192, 255);
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.ForeColor = SystemColors.Info;
+            button1.ForeColor = Color.FromArgb(255, 192, 255);
             button1.Location = new Point(972, 481);
             button1.Name = "button1";
             button1.Size = new Size(43, 29);
@@ -277,7 +279,7 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.Brown;
+            button3.BackColor = Color.Red;
             button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.FlatStyle = FlatStyle.Popup;
             button3.ForeColor = SystemColors.Info;
@@ -327,6 +329,7 @@
             Controls.Add(btnMasa1);
             Name = "frmMasa";
             Text = "Masalar";
+            Load += frmMasa_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -118,79 +118,136 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icecek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ekran görüntüsü 2023-05-19 153527" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ekran görüntüsü 2023-05-19 153527.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="musteri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\musteri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rezerve" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rezerve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="istockphoto-1218084938-170667a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1218084938-170667a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="indir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\indir.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STAR-CHEF-Corporate-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STAR-CHEF-Corporate-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="raporlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\raporlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ayarlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ayarlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="153-1538896_community-icon-transparent-background-png-download-transparent-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="masa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\masa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cikis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cikis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="masa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\masa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-transparent-book-report-report-miscellaneous-text-presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-book-report-report-miscellaneous-text-presentation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image_processing20200423-30831-gikyrq" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image_processing20200423-30831-gikyrq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2907544" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2907544.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="masa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\masa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arasicak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arasicak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ekran görüntüsü 2023-05-19 1535271" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ekran görüntüsü 2023-05-19 153527.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="raporlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raporlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paketservis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paketservis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cikis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cikis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sipariş" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sipariş.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zyro-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zyro-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="istockphoto-1218084938-170667a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1218084938-170667a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ekran görüntüsü 2023-05-19 1535271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ekran görüntüsü 2023-05-19 153527.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2907544" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2907544.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rezerve1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rezerve1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="makarna1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\makarna1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ödeme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ödeme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dolu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dolu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="paketservis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paketservis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fastfood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fastfood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iptal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iptal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="masa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\masa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tatlilar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tatlilar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geridön" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geridön.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anayemek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anayemek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-book-report-report-miscellaneous-text-presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-book-report-report-miscellaneous-text-presentation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kasa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="geridön" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\geridön.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="153-1538896_community-icon-transparent-background-png-download-transparent-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rezerve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rezerve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boş" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boş.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indir.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ayarlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ayarlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hesapözet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hesapözet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fastfood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fastfood1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musteri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musteri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STAR-CHEF-Corporate-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAR-CHEF-Corporate-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paketservis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paketservis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hesapkapat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hesapkapat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

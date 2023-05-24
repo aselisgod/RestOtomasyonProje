@@ -88,9 +88,9 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(190, 580);
             label2.Name = "label2";
-            label2.Size = new Size(67, 28);
+            label2.Size = new Size(145, 28);
             label2.TabIndex = 5;
-            label2.Text = "Şifre :";
+            label2.Text = "Şifre 123456 :";
             // 
             // Form1
             // 

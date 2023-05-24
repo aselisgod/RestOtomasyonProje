@@ -26,11 +26,11 @@ namespace RestoranDemo
             {
 
                 cPersonelHareketleri ch = new cPersonelHareketleri();
-                ch.PersonelId=cGenel._PersonelId;
+                ch.PersonelId = cGenel._PersonelId;
                 ch.Islem = "Giriþ Yapýldý";
-                ch.Tarih=DateTime.Now;
+                ch.Tarih = DateTime.Now;
                 ch.PersonelActionSave(ch);
-                
+
                 this.Hide();
                 frmMenu menu = new frmMenu();
                 menu.Show();
@@ -50,7 +50,7 @@ namespace RestoranDemo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Çýkýþý Onaylýyor Musunuz?","Uyarý !!!",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)==DialogResult.Yes)
+            if (MessageBox.Show("Çýkýþý Onaylýyor Musunuz?", "Uyarý !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }

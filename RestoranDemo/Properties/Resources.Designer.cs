@@ -104,6 +104,36 @@ namespace RestoranDemo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap acik {
+            get {
+                object obj = ResourceManager.GetObject("acik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap anayemek {
+            get {
+                object obj = ResourceManager.GetObject("anayemek", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap arasicak {
+            get {
+                object obj = ResourceManager.GetObject("arasicak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap ayarlar {
             get {
                 object obj = ResourceManager.GetObject("ayarlar", resourceCulture);
@@ -114,9 +144,49 @@ namespace RestoranDemo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap bg {
+            get {
+                object obj = ResourceManager.GetObject("bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap boş {
+            get {
+                object obj = ResourceManager.GetObject("boş", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap cikis {
             get {
                 object obj = ResourceManager.GetObject("cikis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap corba {
+            get {
+                object obj = ResourceManager.GetObject("corba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap dolu1 {
+            get {
+                object obj = ResourceManager.GetObject("dolu1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -137,6 +207,26 @@ namespace RestoranDemo.Properties {
         internal static System.Drawing.Bitmap Ekran_görüntüsü_2023_05_19_1535271 {
             get {
                 object obj = ResourceManager.GetObject("Ekran görüntüsü 2023-05-19 1535271", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap fastfood {
+            get {
+                object obj = ResourceManager.GetObject("fastfood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap fastfood1 {
+            get {
+                object obj = ResourceManager.GetObject("fastfood1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -174,6 +264,36 @@ namespace RestoranDemo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap hesapkapat {
+            get {
+                object obj = ResourceManager.GetObject("hesapkapat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap hesapözet1 {
+            get {
+                object obj = ResourceManager.GetObject("hesapözet1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icecek {
+            get {
+                object obj = ResourceManager.GetObject("icecek", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap image_processing20200423_30831_gikyrq {
             get {
                 object obj = ResourceManager.GetObject("image_processing20200423-30831-gikyrq", resourceCulture);
@@ -194,6 +314,16 @@ namespace RestoranDemo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap iptal {
+            get {
+                object obj = ResourceManager.GetObject("iptal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1218084938_170667a {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1218084938-170667a", resourceCulture);
@@ -207,6 +337,16 @@ namespace RestoranDemo.Properties {
         internal static System.Drawing.Bitmap kasa {
             get {
                 object obj = ResourceManager.GetObject("kasa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap makarna1 {
+            get {
+                object obj = ResourceManager.GetObject("makarna1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -237,6 +377,16 @@ namespace RestoranDemo.Properties {
         internal static System.Drawing.Bitmap musteri {
             get {
                 object obj = ResourceManager.GetObject("musteri", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap ödeme {
+            get {
+                object obj = ResourceManager.GetObject("ödeme", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -294,9 +444,49 @@ namespace RestoranDemo.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap rezerve1 {
+            get {
+                object obj = ResourceManager.GetObject("rezerve1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap salata {
+            get {
+                object obj = ResourceManager.GetObject("salata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap sipariş {
+            get {
+                object obj = ResourceManager.GetObject("sipariş", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap STAR_CHEF_Corporate_logo {
             get {
                 object obj = ResourceManager.GetObject("STAR-CHEF-Corporate-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap tatlilar {
+            get {
+                object obj = ResourceManager.GetObject("tatlilar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
