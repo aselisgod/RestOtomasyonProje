@@ -90,5 +90,34 @@ namespace RestoranDemo
             }
             return sonuc;
         }
+
+        public void AdisyonKapat(int adisyonID , int durum)
+        {
+
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("Update Adisyon set Durum = @durum where ID=@adisyonId", con);
+
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                cmd.Parameters.Add("adisyonId", SqlDbType.Int).Value = adisyonID;
+                cmd.Parameters.Add("durum", SqlDbType.Int).Value = durum;
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                string hata = ex.Message;
+                throw;
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+
+        }
     }
 }

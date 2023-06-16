@@ -162,8 +162,6 @@ namespace RestoranDemo
             /*
              1- MASA BOŞ
             2- MASA DOLU
-            3- MASA REZERVE
-            4- DOLU REZERVE
              */
 
             cMasalar masa = new cMasalar();
@@ -175,14 +173,14 @@ namespace RestoranDemo
 
             if (masa.TableGetByState(tableId, 1) == true)
             {
-                newAddition.ServisTurNo = 1;// 
+                newAddition.ServisTurNo = 1;
                 newAddition.PersonelID = 1;
                 newAddition.MasaId = tableId;
                 newAddition.Tarih = DateTime.Now;
                 sonuc = newAddition.setByAdditionNew(newAddition);
-                masa.setChangeTableState(cGenel._ButtonName, 2);    // 1. durumdaki masayı 2. duruma geçiriyor. yani dolu durumuna
+                masa.setChangeTableState(cGenel._ButtonName, 2);
 
-                if (lvSiparisler.Items.Count > 0)// siparis varsa bunları veri tabanına kayıt yapıyor sanırım evet abi
+                if (lvSiparisler.Items.Count > 0)
                 {
                     for (int i = 0; i < lvSiparisler.Items.Count; i++)
                     {
@@ -221,28 +219,26 @@ namespace RestoranDemo
             }
             else if (masa.TableGetByState(tableId, 3) == true)
             {
-                if (masa.TableGetByState(tableId, 1) == true)
-                {
-                    newAddition.ServisTurNo = 1;
-                    newAddition.PersonelID = 1;
-                    newAddition.MasaId = tableId;
-                    newAddition.Tarih = DateTime.Now;
-                    sonuc = newAddition.setByAdditionNew(newAddition);
-                    masa.setChangeTableState(cGenel._ButtonName, 4);
 
-                    if (lvSiparisler.Items.Count > 0)
+                newAddition.ServisTurNo = 1;
+                newAddition.PersonelID = 1;
+                newAddition.MasaId = tableId;
+                newAddition.Tarih = DateTime.Now;
+                sonuc = newAddition.setByAdditionNew(newAddition);
+                masa.setChangeTableState(cGenel._ButtonName, 4);
+
+                if (lvSiparisler.Items.Count > 0)
+                {
+                    for (int i = 0; i < lvSiparisler.Items.Count; i++)
                     {
-                        for (int i = 0; i < lvSiparisler.Items.Count; i++)
-                        {
-                            saveOrder.MasaId = tableId;
-                            saveOrder.UrunId = Convert.ToInt32(lvSiparisler.Items[i].SubItems[2].Text);
-                            saveOrder.AdisyonID = newAddition.getByAddition(tableId);
-                            saveOrder.Adet = Convert.ToInt32(lvSiparisler.Items[i].SubItems[1].Text);
-                            saveOrder.setSaveOrder(saveOrder);
-                        }
-                        this.Close();
-                        ms.Show();
+                        saveOrder.MasaId = tableId;
+                        saveOrder.UrunId = Convert.ToInt32(lvSiparisler.Items[i].SubItems[2].Text);
+                        saveOrder.AdisyonID = newAddition.getByAddition(tableId);
+                        saveOrder.Adet = Convert.ToInt32(lvSiparisler.Items[i].SubItems[1].Text);
+                        saveOrder.setSaveOrder(saveOrder);
                     }
+                    this.Close();
+                    ms.Show();
                 }
             }
         }
@@ -310,6 +306,16 @@ namespace RestoranDemo
                 }
                 lvSiparisler.Items.RemoveAt(lvSiparisler.SelectedItems[0].Index);
             }
+        }
+
+        private void btnÖdeme_Click(object sender, EventArgs e)
+        {
+
+            cGenel._ServisTurNO = 1;
+            cGenel._AdisyonId = AdditionId.ToString();
+            frmBill frm = new frmBill();
+            this.Close();
+            frm.Show();
         }
     }
 }

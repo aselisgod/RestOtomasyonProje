@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBill));
             groupBox1 = new GroupBox();
             chkIndirim = new CheckBox();
-            groupBox2 = new GroupBox();
+            gbIndirim = new GroupBox();
+            txtIndirimTutarı = new TextBox();
+            label6 = new Label();
             groupBox3 = new GroupBox();
-            lblAraToplam = new Label();
-            lblFiyat = new Label();
+            lblOdenecek = new Label();
+            lblToplamTutar = new Label();
             label10 = new Label();
             label3 = new Label();
             lblKdv = new Label();
@@ -59,11 +62,11 @@
             button1 = new Button();
             button2 = new Button();
             label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            textBox1 = new TextBox();
+            lblAdisyonID = new Label();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
+            printPreviewDialog1 = new PrintPreviewDialog();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
+            gbIndirim.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             SuspendLayout();
@@ -89,25 +92,47 @@
             chkIndirim.TabIndex = 0;
             chkIndirim.Text = "İndirim Uygula";
             chkIndirim.UseVisualStyleBackColor = true;
+            chkIndirim.CheckedChanged += chkIndirim_CheckedChanged;
             // 
-            // groupBox2
+            // gbIndirim
             // 
-            groupBox2.BackColor = Color.LightGray;
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox2.Location = new Point(1006, 72);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(248, 148);
-            groupBox2.TabIndex = 0;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Özel Aktivite";
+            gbIndirim.BackColor = Color.LightGray;
+            gbIndirim.Controls.Add(txtIndirimTutarı);
+            gbIndirim.Controls.Add(label6);
+            gbIndirim.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            gbIndirim.Location = new Point(1006, 72);
+            gbIndirim.Name = "gbIndirim";
+            gbIndirim.Size = new Size(248, 148);
+            gbIndirim.TabIndex = 0;
+            gbIndirim.TabStop = false;
+            gbIndirim.Text = "Özel Aktivite";
+            gbIndirim.Visible = false;
+            // 
+            // txtIndirimTutarı
+            // 
+            txtIndirimTutarı.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtIndirimTutarı.Location = new Point(6, 82);
+            txtIndirimTutarı.Multiline = true;
+            txtIndirimTutarı.Name = "txtIndirimTutarı";
+            txtIndirimTutarı.Size = new Size(190, 30);
+            txtIndirimTutarı.TabIndex = 1;
+            txtIndirimTutarı.TextChanged += txtIndirimTutarı_TextChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(6, 39);
+            label6.Name = "label6";
+            label6.Size = new Size(190, 28);
+            label6.TabIndex = 0;
+            label6.Text = "Özel İndirim Tutarı";
             // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.LightGray;
-            groupBox3.Controls.Add(lblAraToplam);
-            groupBox3.Controls.Add(lblFiyat);
+            groupBox3.Controls.Add(lblOdenecek);
+            groupBox3.Controls.Add(lblToplamTutar);
             groupBox3.Controls.Add(label10);
             groupBox3.Controls.Add(label3);
             groupBox3.Controls.Add(lblKdv);
@@ -126,23 +151,23 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Ödeme Bilgileri";
             // 
-            // lblAraToplam
+            // lblOdenecek
             // 
-            lblAraToplam.AutoSize = true;
-            lblAraToplam.Location = new Point(183, 189);
-            lblAraToplam.Name = "lblAraToplam";
-            lblAraToplam.Size = new Size(33, 38);
-            lblAraToplam.TabIndex = 1;
-            lblAraToplam.Text = "0";
+            lblOdenecek.AutoSize = true;
+            lblOdenecek.Location = new Point(183, 189);
+            lblOdenecek.Name = "lblOdenecek";
+            lblOdenecek.Size = new Size(33, 38);
+            lblOdenecek.TabIndex = 1;
+            lblOdenecek.Text = "0";
             // 
-            // lblFiyat
+            // lblToplamTutar
             // 
-            lblFiyat.AutoSize = true;
-            lblFiyat.Location = new Point(183, 141);
-            lblFiyat.Name = "lblFiyat";
-            lblFiyat.Size = new Size(33, 38);
-            lblFiyat.TabIndex = 1;
-            lblFiyat.Text = "0";
+            lblToplamTutar.AutoSize = true;
+            lblToplamTutar.Location = new Point(183, 141);
+            lblToplamTutar.Name = "lblToplamTutar";
+            lblToplamTutar.Size = new Size(33, 38);
+            lblToplamTutar.TabIndex = 1;
+            lblToplamTutar.Text = "0";
             // 
             // label10
             // 
@@ -224,6 +249,7 @@
             lblIndirim.Size = new Size(33, 38);
             lblIndirim.TabIndex = 1;
             lblIndirim.Text = "0";
+            lblIndirim.TextChanged += lblIndirim_TextChanged;
             // 
             // label1
             // 
@@ -357,6 +383,7 @@
             button1.TabIndex = 1;
             button1.Text = "HESAP ÖZETİ";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -367,6 +394,7 @@
             button2.Size = new Size(235, 133);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label4
             // 
@@ -378,32 +406,30 @@
             label4.TabIndex = 9;
             label4.Text = "Siparisler";
             // 
-            // label5
+            // lblAdisyonID
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(212, 35);
-            label5.Name = "label5";
-            label5.Size = new Size(22, 20);
-            label5.TabIndex = 10;
-            label5.Text = "Id";
+            lblAdisyonID.AutoSize = true;
+            lblAdisyonID.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAdisyonID.Location = new Point(198, 21);
+            lblAdisyonID.Name = "lblAdisyonID";
+            lblAdisyonID.Size = new Size(30, 28);
+            lblAdisyonID.TabIndex = 10;
+            lblAdisyonID.Text = "Id";
             // 
-            // label6
+            // printDocument1
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(6, 39);
-            label6.Name = "label6";
-            label6.Size = new Size(190, 28);
-            label6.TabIndex = 0;
-            label6.Text = "Özel İndirim Tutarı";
+            printDocument1.PrintPage += printDocument1_PrintPage_1;
             // 
-            // textBox1
+            // printPreviewDialog1
             // 
-            textBox1.Location = new Point(6, 82);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(190, 30);
-            textBox1.TabIndex = 1;
+            printPreviewDialog1.AutoScrollMargin = new Size(0, 0);
+            printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
+            printPreviewDialog1.ClientSize = new Size(400, 300);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.Enabled = true;
+            printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
+            printPreviewDialog1.Name = "printPreviewDialog1";
+            printPreviewDialog1.Visible = false;
             // 
             // frmBill
             // 
@@ -412,7 +438,7 @@
             BackgroundImage = Properties.Resources.STAR_CHEF_Corporate_logo;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1512, 779);
-            Controls.Add(label5);
+            Controls.Add(lblAdisyonID);
             Controls.Add(label4);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -420,16 +446,17 @@
             Controls.Add(btnGeriDön);
             Controls.Add(lvUrunler);
             Controls.Add(groupBox4);
-            Controls.Add(groupBox2);
+            Controls.Add(gbIndirim);
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
             DoubleBuffered = true;
             Name = "frmBill";
             Text = "frmBill";
+            Load += frmBill_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            gbIndirim.ResumeLayout(false);
+            gbIndirim.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             groupBox4.ResumeLayout(false);
@@ -441,7 +468,7 @@
         #endregion
 
         private GroupBox groupBox1;
-        private GroupBox groupBox2;
+        private GroupBox gbIndirim;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private CheckBox chkIndirim;
@@ -454,8 +481,8 @@
         private RadioButton rbTicket;
         private RadioButton rbKrediKartı;
         private RadioButton rbNakit;
-        private Label lblAraToplam;
-        private Label lblFiyat;
+        private Label lblOdenecek;
+        private Label lblToplamTutar;
         private Label label10;
         private Label label3;
         private Label lblKdv;
@@ -470,9 +497,11 @@
         private Button btnGeriDön;
         private Button button1;
         private Button button2;
-        private TextBox textBox1;
+        private TextBox txtIndirimTutarı;
         private Label label6;
         private Label label4;
-        private Label label5;
+        private Label lblAdisyonID;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private PrintPreviewDialog printPreviewDialog1;
     }
 }

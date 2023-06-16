@@ -40,12 +40,8 @@
             btnMasa10 = new Button();
             btnGeriDön = new Button();
             btnCikis = new Button();
-            label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             SuspendLayout();
@@ -90,6 +86,7 @@
             btnMasa3.TabIndex = 0;
             btnMasa3.Text = "Masa 3";
             btnMasa3.UseVisualStyleBackColor = true;
+            btnMasa3.Click += btnMasa3_Click_1;
             // 
             // btnMasa4
             // 
@@ -103,6 +100,7 @@
             btnMasa4.TabIndex = 0;
             btnMasa4.Text = "Masa 4";
             btnMasa4.UseVisualStyleBackColor = true;
+            btnMasa4.Click += btnMasa4_Click_1;
             // 
             // btnMasa5
             // 
@@ -116,6 +114,7 @@
             btnMasa5.TabIndex = 0;
             btnMasa5.Text = "Masa 5";
             btnMasa5.UseVisualStyleBackColor = true;
+            btnMasa5.Click += btnMasa5_Click_1;
             // 
             // btnMasa6
             // 
@@ -129,6 +128,7 @@
             btnMasa6.TabIndex = 0;
             btnMasa6.Text = "Masa 6";
             btnMasa6.UseVisualStyleBackColor = true;
+            btnMasa6.Click += btnMasa6_Click_1;
             // 
             // btnMasa7
             // 
@@ -142,6 +142,7 @@
             btnMasa7.TabIndex = 0;
             btnMasa7.Text = "Masa 7";
             btnMasa7.UseVisualStyleBackColor = true;
+            btnMasa7.Click += btnMasa7_Click_1;
             // 
             // btnMasa8
             // 
@@ -155,6 +156,7 @@
             btnMasa8.TabIndex = 0;
             btnMasa8.Text = "Masa 8";
             btnMasa8.UseVisualStyleBackColor = true;
+            btnMasa8.Click += btnMasa8_Click_1;
             // 
             // btnMasa9
             // 
@@ -168,6 +170,7 @@
             btnMasa9.TabIndex = 0;
             btnMasa9.Text = "Masa 9";
             btnMasa9.UseVisualStyleBackColor = true;
+            btnMasa9.Click += btnMasa9_Click_1;
             // 
             // btnMasa10
             // 
@@ -181,6 +184,7 @@
             btnMasa10.TabIndex = 0;
             btnMasa10.Text = "Masa 10";
             btnMasa10.UseVisualStyleBackColor = true;
+            btnMasa10.Click += btnMasa10_Click_1;
             // 
             // btnGeriDön
             // 
@@ -208,29 +212,6 @@
             btnCikis.UseVisualStyleBackColor = true;
             btnCikis.Click += btnCikis_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(255, 192, 255);
-            label1.Location = new Point(1021, 481);
-            label1.Name = "label1";
-            label1.Size = new Size(135, 28);
-            label1.TabIndex = 1;
-            label1.Text = "Açık Rezerve";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Window;
-            label2.Location = new Point(1021, 528);
-            label2.Name = "label2";
-            label2.Size = new Size(88, 28);
-            label2.TabIndex = 1;
-            label2.Text = "Rezerve";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -246,36 +227,12 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.LightCoral;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(1021, 620);
             label4.Name = "label4";
             label4.Size = new Size(46, 28);
             label4.TabIndex = 1;
             label4.Text = "Boş";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(255, 192, 255);
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.ForeColor = Color.FromArgb(255, 192, 255);
-            button1.Location = new Point(972, 481);
-            button1.Name = "button1";
-            button1.Size = new Size(43, 29);
-            button1.TabIndex = 2;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.Window;
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.ForeColor = SystemColors.Info;
-            button2.Location = new Point(972, 527);
-            button2.Name = "button2";
-            button2.Size = new Size(43, 29);
-            button2.TabIndex = 2;
-            button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -291,7 +248,7 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.LightCoral;
+            button4.BackColor = Color.White;
             button4.BackgroundImageLayout = ImageLayout.Stretch;
             button4.FlatStyle = FlatStyle.Popup;
             button4.ForeColor = SystemColors.Info;
@@ -309,12 +266,8 @@
             ClientSize = new Size(1168, 680);
             Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(label4);
-            Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(label1);
             Controls.Add(btnCikis);
             Controls.Add(btnGeriDön);
             Controls.Add(btnMasa10);
@@ -348,12 +301,8 @@
         private Button btnMasa10;
         private Button btnGeriDön;
         private Button btnCikis;
-        private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
-        private Button button1;
-        private Button button2;
         private Button button3;
         private Button button4;
     }

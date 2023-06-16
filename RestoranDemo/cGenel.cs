@@ -16,5 +16,7 @@ namespace Restoran
 
         public static string _ButtonValue;
         public static string _ButtonName;
+        public static int _ServisTurNO;
+        public static string _AdisyonId;
     }
 }

@@ -98,7 +98,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.STAR_CHEF_Corporate_logo;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(929, 687);
+            ClientSize = new Size(931, 693);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button2);

@@ -498,6 +498,7 @@
             btnÖdeme.Size = new Size(180, 85);
             btnÖdeme.TabIndex = 0;
             btnÖdeme.UseVisualStyleBackColor = true;
+            btnÖdeme.Click += btnÖdeme_Click;
             // 
             // btnSiparis
             // 

@@ -23,69 +23,19 @@ namespace RestoranDemo
             this.Close();
             frm.Show();
         }
-
-        private void btnRezervasyon_Click(object sender, EventArgs e)
-        {
-            frmRezervasyon frm = new frmRezervasyon();
-            this.Close();
-            frm.Show();
-        }
-
-        private void btnPaketServis_Click(object sender, EventArgs e)
-        {
-            frmSiparis frm = new frmSiparis();
-            this.Close();
-            frm.Show();
-        }
-
-        private void btnMusteriler_Click(object sender, EventArgs e)
-        {
-            frmMusteriler frm = new frmMusteriler();
-            this.Close();
-            frm.Show();
-        }
-
-        private void btnKasa_Click(object sender, EventArgs e)
-        {
-            frmKasa frm = new frmKasa();
-            this.Close();
-            frm.Show();
-        }
-
-        private void btnMutfak_Click(object sender, EventArgs e)
-        {
-            frmMutfak frm = new frmMutfak();
-            this.Close();
-            frm.Show();
-        }
-
-        private void btnRaporlar_Click(object sender, EventArgs e)
-        {
-            frmRaporlar frmRaporlar = new frmRaporlar();
-            this.Close();
-            frmRaporlar.Show();
-        }
-
-        private void btnAyarlar_Click(object sender, EventArgs e)
-        {
-            frmSettings frmSettings = new frmSettings();
-            this.Close();
-            frmSettings.Show();
-        }
-
-        private void btnKilit_Click(object sender, EventArgs e)
-        {
-            frmLock frmLock = new frmLock();
-            frmLock.Show();
-            this.Close();
-        }
-
         private void btnCikis_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Çıkışı Onaylıyor Musunuz?", "Uyarı !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
+        }
+
+        private void btnGeriDön_Click(object sender, EventArgs e)
+        {
+            frmMenu frm = new frmMenu();
+            this.Close();
+            frm.Show();
         }
     }
 }

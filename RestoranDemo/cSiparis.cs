@@ -48,7 +48,7 @@ namespace RestoranDemo
                     lv.Items.Add(dr["URUNAD"].ToString());
                     lv.Items[sayac].SubItems.Add(dr["ADET"].ToString());
                     lv.Items[sayac].SubItems.Add(dr["URUNID"].ToString());
-                    lv.Items[sayac].SubItems.Add(Convert.ToString(Convert.ToDecimal(dr["FİYAT"]) * Convert.ToDecimal(dr["ADET"])));
+                    lv.Items[sayac].SubItems.Add(Convert.ToString(Convert.ToDecimal(dr["FIYAT"]) * Convert.ToDecimal(dr["ADET"])));
                     lv.Items[sayac].SubItems.Add(dr["ID"].ToString());
 
                     sayac++;
@@ -72,7 +72,7 @@ namespace RestoranDemo
             bool sonuc = false;
 
             SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("Insert Into satislar(ADISYONID,URUNID,ADET,MASAID) values(@AdisyonNo,@UrunId,@Adet,@MasaId)",con);
+            SqlCommand cmd = new SqlCommand("Insert Into satislar(ADISYONID,URUNID,ADET,MASAID) values(@AdisyonNo,@UrunId,@Adet,@MasaId)", con);
 
             try
             {
@@ -84,23 +84,25 @@ namespace RestoranDemo
                 cmd.Parameters.Add("@UrunId", SqlDbType.Int).Value = Bilgiler._UrunId;
                 cmd.Parameters.Add("@Adet", SqlDbType.Int).Value = Bilgiler._Adet;
                 cmd.Parameters.Add("@MasaId", SqlDbType.Int).Value = Bilgiler._MasaId;
+
+                sonuc = Convert.ToBoolean(cmd.ExecuteNonQuery());
             }
             catch (SqlException ex)
             {
                 string hata = ex.Message;
             }
-            finally 
+            finally
             {
-                con.Dispose();
                 con.Close();
             }
             return sonuc;
         }
 
+
         public void setDeleteOrder(int satisId)
         {
             SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("Delete From satislar Where ID=@SatisID",con);
+            SqlCommand cmd = new SqlCommand("Delete From satislar Where ID=@SatisID", con);
 
             cmd.Parameters.Add("@SatisID", SqlDbType.Int).Value = satisId;
 
@@ -109,8 +111,8 @@ namespace RestoranDemo
                 con.Open();
             }
             cmd.ExecuteNonQuery();
-            con.Dispose();
-            con.Close();
+            con.Close(); 
         }
+
     }
 }
